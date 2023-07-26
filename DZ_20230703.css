@@ -1,0 +1,260 @@
+header {
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid black;
+    background-color: rgb(255, 255, 255);
+}
+
+header div {
+    width: auto;
+    height: 100px;
+}
+
+#s1 {
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+
+#s2 {
+    margin-top: 15px;
+}
+
+header div div {
+    display: block;
+    float: right;
+    margin-top: 15px;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.mainDiv {
+    margin-left: 25%;
+    width: 1000px;
+}
+
+main div p {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.cont {
+    width: 450px;
+    margin-left: 0;
+    font-size: 25px;
+    float: left;
+}
+
+.cont2 {
+    float: right;
+    width: 450px;
+    font-size: 25px;
+}
+
+.cont3 {
+    float: left;
+    width: 100px;
+    height: 80px;
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: -15px;
+
+}
+
+#adress {
+
+    width: 450px;
+    margin-left: 100px;
+    float: left;
+}
+
+.field {
+    height: 40px;
+    width: 450px;
+    font-size: 25px;
+}
+
+.field2 {
+    height: 40px;
+    width: 95px;
+    font-size: 25px;
+    text-align: right;
+}
+
+.marg {
+    margin-top: 20px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.delivery {
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+#radio_delivery,
+#radio_pickup,
+#trainSticks,
+#classicSticks,
+#napkins {
+    width: 25px;
+    height: 25px;
+}
+
+.TextPickup {
+    font-size: 28px;
+    display: none;
+}
+
+.Delivery_adress {
+    width: 1000px;
+    overflow: hidden;
+    display: none;
+}
+
+.delivery #radio_pickup:checked~.TextPickup {
+    display: inline-block
+}
+
+.delivery #radio_delivery:checked~.Delivery_adress {
+    display: inline-block
+}
+
+.textTitle {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.numberSamurai {
+    margin-left: 45px;
+    float: left;
+    width: 400px;
+}
+
+#numberPerson,
+#numberTrainStikcks,
+#numberClassicSticks {
+    margin-left: 5px;
+    height: 26px;
+    width: 60px;
+    font-size: 26px;
+    text-align: center;
+}
+
+.numberSticks {
+    margin-left: 45px;
+    float: right;
+    width: 400px;
+}
+
+.sticks {
+    margin-top: -25px;
+}
+
+.textTitle2 {
+    font-size: 30px;
+    font-weight: normal;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.divMenu {
+    width: 100%;
+    margin: 0% auto;
+}
+
+.cources {
+    width: 13%;
+    max-height: 420px;
+    margin: 2% 1%;
+    background-color: rgb(165, 163, 163);
+    border: solid 0;
+    border-radius: 13px;
+    float: left;
+    transition: box-shadow 0.6s;
+}
+
+.cources:hover{
+    box-shadow: 10px 10px 10px 10px gray;
+}
+
+div.divMenu p {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+#sushi {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-bottom: solid 2px;
+    border-radius: 13px;
+}
+
+div.cources input[type=number] {
+    margin-left: 5px;
+    height: 26px;
+    width: 60px;
+    font-size: 26px;
+    display: none;
+    text-align: center;
+}
+
+div.cources input[type=checkbox] {
+    height: 26px;
+    width: 26px;
+    margin-left: 10%;
+    margin-top: 5%;
+    float: left;
+}
+
+.cources input[type=checkbox]:checked~input[type=number] {
+    display: inline-block;
+}
+
+.cources p {
+    margin: 6% auto 5% 25%;
+}
+
+.comment {
+    width: 1000px;
+    margin: 2% auto;
+    padding-left: 20%;
+}
+
+.comment textarea {
+    width: 60%;
+    height: 70px;
+    font-size: 16px;
+}
+
+.comment label {
+    font-size: 26px;
+}
+
+.akcept {
+    width: 1000px;
+    height: 150px;
+    margin: 2% auto;
+    padding-left: 20%;
+}
+
+.akcept input {
+    background: pink;
+    width: 30%;
+    height: 35%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: font-size 0.15s,  box-shadow 0.5s;
+}
+
+.akcept input:hover{
+    box-shadow: 5px 5px pink;
+}
+
+.akcept input:active{
+    font-size: 25px;
+}

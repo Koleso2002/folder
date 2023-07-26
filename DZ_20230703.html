@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="DZ_20230703.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="samurai.png" alt="samurai" id="s1" />
+            <img src="s2.png" alt="sushi" id="s2" />
+            <div>322-22-32-22</div>
+        </div>
+    </header>
+    <main>
+        <div class="mainDiv">
+            <form method="post" action="#" id="zakaz">
+                <p>Оформление заказа</p>
+                <div class="cont">
+                    <label for="name">Имя: <br></label>
+                    <input class="field" type="text" id="name" name="nameClient" placeholder="Как к Вам обращаться" />
+                </div>
+                <div class="cont2">
+                    <label for="phone">Телефон:<br></label>
+                    <input class="field" type="tel" id="phone" name="phoneClient" placeholder="+7 (999) ***-**-**" />
+                </div>
+                <div class="cont marg">
+                    <label for="mail">Email:<br></label>
+                    <input class="field" type="email" id="mail" name="emailClient" placeholder="ivanov@samurai.com" />
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="delivery">
+                    <input type="radio" name="radio_delivery" id="radio_pickup">
+                    <label for="radio_pickup">самовывоз</label>
+                    <input type="radio" name="radio_delivery" id="radio_delivery">
+                    <label for="radio_delivery">доставка</label>
+
+                    <p class="TextPickup"> Вы можете забрать свой заказ по адресу:
+                        3-я улица Строителей, дом 5</p>
+
+                    <div class="Delivery_adress">
+                        <p class="textTitle">Адрес доставки</p>
+                        <div class="cont " style="margin-top: -15px; float:left">
+                            <input class="field" type="text" id="street" name="streetClient" placeholder="Улица" />
+                        </div>
+                        <div id="adress">
+                            <div class="cont3" style="margin-left: 0px;">
+                                <input class="field2" type="text" id="NumberHouse" name="NumberHouseClient"
+                                    placeholder="дом" />
+                            </div>
+                            <div class="cont3">
+                                <input class="field2" type="text" id="NumberFlat" name="NumberFlatClient"
+                                    placeholder="кв." />
+                            </div>
+                            <div class="cont3" style="width: 100px;">
+                                <input class="field2" type="text" id="NumberPorch" name="NumberPorchClient"
+                                    placeholder="подъезд" />
+                            </div>
+                            <div class="cont3" style="width: 100px;">
+                                <input class="field2" type="text" id="NumberFloor" name="NumberFloorhClient"
+                                    placeholder="этаж" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="textTitle"><b>Состав заказа</b></p>
+                    <div class="numberSamurai">
+                        <label for="numberPerson" class="textTitle">Количество самураев</label>
+                        <input type="number" name="numberPerson" id="numberPerson" min="1" max="99" step="1" />
+                        <div style="margin-top: 20px; margin-left: 175px;">
+                            <label for="napkins" class="textTitle2">салфетки</label>
+                            <input type="checkbox" name="napkins" id="napkins">
+                        </div>
+                    </div>
+                    <div class="numberSticks">
+                        <p class="textTitle" style="margin-top: 0px;">Вид палочек:</p>
+                        <div class="sticks">
+                            <input type="checkbox" name="trainSticks" id="trainSticks">
+                            <label for="trainSticks" class="textTitle2">учебные</label>
+                            <input type="number" name="numberTrainStikcks" id="numberTrainStikcks" min="1" max="99"
+                                step="1" style="margin-left: 11px;" />
+                        </div>
+                        <div>
+                            <input type="checkbox" name="classicSticks" id="classicSticks">
+                            <label for="classicSticks" class="textTitle2">обычные</label>
+                            <input type="number" name="numberClassicSticks" id="numberClassicSticks" min="1" max="99"
+                                step="1" />
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+
+                </div>
+            </form>
+        </div>
+        <div class="divMenu">
+            <form method="post" action="#" id="menu">
+                <div class="cources">
+                    <div>
+                        <img src="sushi.jpg" alt="sushi" id="sushi" />
+                    </div>
+                    <input type="checkbox" name="taimaki" id="taimaki" />
+                    <p>ТАЙ МАКИ</p>
+                    <p style="text-align: right; padding-right: 2%;">$2.99</p>
+                    <input type="number" name="countTaimaki" id="countTaimaki" min="1" max="99" step="1" value="1"
+                        style="margin-left: 35%; margin-bottom: 5%;" />
+                </div>
+                <div class="cources">
+                    <div>
+                        <img src="sushi.jpg" alt="sushi" id="sushi" />
+                    </div>
+                    <input type="checkbox" name="unagi" id="unagi" />
+                    <p>УНАГИ</p>
+                    <p style="text-align: right; padding-right: 2%;">$2.00</p>
+                    <input type="number" name="countUnagi" id="countUnagi" min="1" max="99" step="1" value="1"
+                        style="margin-left: 35%; margin-bottom: 5%;" />
+                </div>
+                <div class="cources">
+                    <div>
+                        <img src="sushi.jpg" alt="sushi" id="sushi" />
+                    </div>
+                    <input type="checkbox" name="ikura" id="ikura" />
+                    <p>ИКУРА</p>
+                    <p style="text-align: right; padding-right: 2%;">$1.99</p>
+                    <input type="number" name="countIkura" id="countIkura" min="1" max="99" step="1" value="1"
+                        style="margin-left: 35%; margin-bottom: 5%;" />
+                </div>
+                <div class="cources">
+                    <div>
+                        <img src="sushi.jpg" alt="sushi" id="sushi" />
+                    </div>
+                    <input type="checkbox" name="dragon" id="dragon" />
+                    <p>ДРАКОН</p>
+                    <p style="text-align: right; padding-right: 2%;">$1.49</p>
+                    <input type="number" name="countDragon" id="countDragon" min="1" max="99" step="1" value="1"
+                        style="margin-left: 35%; margin-bottom: 5%;" />
+                </div>
+                <div class="cources">
+                    <div>
+                        <img src="sushi.jpg" alt="sushi" id="sushi" />
+                    </div>
+                    <input type="checkbox" name="fudzi" id="fudzi" />
+                    <p>ФУДЗИЯМА</p>
+                    <p style="text-align: right; padding-right: 2%;">$1.49</p>
+                    <input type="number" name="countFudzi" id="countFudzi" min="1" max="99" step="1" value="1"
+                        style="margin-left: 35%; margin-bottom: 5%;" />
+                </div>
+                <div class="cources">
+                    <div>
+                        <img src="sushi.jpg" alt="sushi" id="sushi" />
+                    </div>
+                    <input type="checkbox" name="niagara" id="niagara" />
+                    <p>НИАГАРА</p>
+                    <p style="text-align: right; padding-right: 2%;">$1.49</p>
+                    <input type="number" name="countNiagara" id="countNiagara" min="1" max="99" step="1" value="1"
+                        style="margin-left: 35%; margin-bottom: 5%;" />
+                </div>
+
+                <div class="comment clearfix">
+                    <label for="comment">Ваш комментарий:</label><br />
+                    <textarea name="comment" id="comment" placeholder="Не более 200 символов"
+                        maxlength="200"></textarea>
+                </div>
+            </form>
+        </div>
+        <div class="akcept">
+            <input type="submit" form="zakaz menu" value="Отправить заказ"></input>
+        </div>
+    </main>
+
+</body>
+
+</html>
